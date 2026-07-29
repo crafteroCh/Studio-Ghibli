@@ -1,0 +1,529 @@
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="img/logo.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <div class="container-fluid contenedor"><!--inicio contenedor-->
+<div class="row">
+    <div class="col-md-12">
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="index.html">
+                <img src="img/logo2.png" width="100">
+              </a>
+
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">inicio</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="#fundadores">fundadores</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://open.spotify.com/playlist/6ABOS16Y6EJxn7NFxWzric?si=e3iD4fHiSEC8YliU5DW_qQ" target="_blank">
+                      musica
+                    </a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="https://www.netflix.com/cl/browse/genre/81227213" target="_blank">
+                      Peliculas
+                    </a>
+                  </li>
+                </ul>
+
+                
+                <div class="d-flex">
+                  <button onclick="toggleMusic()" id="musicBtn" class="btn btn-outline-light">
+                     Música de ambiente
+                  </button>
+                </div>
+
+              </div>
+            </div>
+        </nav>
+    </div>
+</div>
+
+
+<audio id="bgMusic" loop>
+  <source src="img/Studio Ghibli Soundtracks.mp3" type="audio/mpeg">
+</audio>
+
+
+<script>
+let music = document.getElementById("bgMusic");
+let btn = document.getElementById("musicBtn");
+
+function toggleMusic() {
+  if (music.paused) {
+    music.play();
+    btn.innerText = " Pausar música";
+  } else {
+    music.pause();
+    btn.innerText = " Música de ambiente";
+  }
+}
+</script>
+
+       <br>
+
+
+
+
+
+
+<center>
+
+<div class="row" >
+    <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/baner1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/laputa.jfif" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+             </div>
+          </div>
+          <div class="carousel-item">
+            <img src="img/chihiro.jpeg" class="d-block w-100" alt="...">
+            <div class="carousel-caption d-none d-md-block">
+              </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+</div>
+</center>
+    <br>
+    <div class="row">
+        <div class="col-md-4 texto1">
+          Studio Ghibli es un aclamado estudio japonés de animación, reconocido como uno de los más importantes e influyentes a nivel mundial dentro de la industria cinematográfica. Fue fundado el 15 de junio de 1985 por los directores Hayao Miyazaki e Isao Takahata, junto al productor Toshio Suzuki, quienes compartían la visión de crear obras animadas con un alto nivel artístico y narrativo.
+
+          Desde sus inicios, el estudio se ha destacado por producir largometrajes animados que combinan una estética visual cuidadosamente elaborada a mano con historias profundas, sensibles y llenas de significado. Sus películas suelen abordar temas como la relación entre la humanidad y la naturaleza, la infancia, la guerra, la identidad y el crecimiento personal, logrando conectar con audiencias de todas las edades alrededor del mundo. Gracias a su estilo único y su compromiso con la calidad, Studio Ghibli se ha consolidado como un referente cultural dentro y fuera de Japón.
+        </div>
+        <img src="img/medio.jpg" class="col-md-3">
+        <div class="col-md-5 texto2">
+          El nombre “Ghibli” proviene de una palabra italiana utilizada para describir un viento cálido del desierto que sopla desde el Sahara, también conocido como siroco. Hayao Miyazaki eligió este término con la intención simbólica de que el estudio representara “un nuevo viento” dentro de la industria de la animación japonesa, marcando una diferencia frente a las producciones tradicionales de la época.
+
+          Esta idea no solo se reflejó en el nombre, sino también en la filosofía del estudio, que apuesta por la creatividad, la innovación y la expresión artística sin compromisos comerciales excesivos. A lo largo de los años, Studio Ghibli ha logrado influir profundamente en generaciones de animadores y espectadores, convirtiéndose en un símbolo de excelencia en la animación y dejando un legado duradero en la historia del cine.
+        
+        </div>
+
+    </div>
+
+    <br>
+    <div class="row">
+      <h3 class="titulo">Peliculas</h3>
+    </div>
+    <br>
+    <!--========================================Tarjetas======================================================-->
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per1"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">El viaje de Chihiro</h5>
+            <p class="card-text">El viaje de Chihiro es una aclamada película de animación japonesa de 2001, escrita y dirigida por Hayao Miyazaki. Narra la historia de Chihiro, una niña caprichosa y algo temerosa de 10 años que, durante una mudanza, entra por accidente a un mundo mágico gobernado por dioses y espíritus</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per2"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">La princesa Mononoke</h5>
+            <p class="card-text">La princesa Mononoke (cuyo nombre real es San) es la protagonista de la obra maestra de 1997 dirigida por Hayao Miyazaki y producida por Studio Ghibli. Criada por la diosa loba Moro, es una feroz guerrera que lucha para salvar el bosque y a los dioses de la naturaleza de la destrucción humana</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per3"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Mi vecino Totoro</h5>
+            <p class="card-text">Mi vecino Totoro es una icónica película de animación japonesa de 1988 creada por Hayao Miyazaki para Studio Ghibli. Narra la historia de dos hermanas, Satsuki y Mei, quienes se mudan al campo en 1958 para estar cerca de su madre hospitalizada. Allí descubren que el bosque cercano está habitado por amigables espíritus mágicos llamados Totoros</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per4"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">El castillo ambulante</h5>
+            <p class="card-text">El castillo ambulante (Howl's Moving Castle) es una historia de fantasía que sigue a Sophie, una joven convertida en anciana por una bruja. Para romper el hechizo, busca refugio en el castillo mágico del excéntrico mago Howl. Juntos viven una gran aventura que explora el amor, la libertad y la autoaceptación</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+
+    </div><!--fin fila-->
+    <br>
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per5"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">La tumba de las luciérnagas</h5>
+            <p class="card-text">"La tumba de las luciérnagas" es un desgarrador drama ambientado en 1945 en Kōbe (Japón), durante la Segunda Guerra Mundial. Narra la trágica lucha por la supervivencia de Seita (14 años) y su hermana pequeña Setsuko (4 años), quienes quedan huérfanos y deben enfrentarse a la incomprensión, el hambre y la devastación extrema</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per6"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">El castillo en el cielo</h5>
+            <p class="card-text">El castillo en el cielo (también llamada Laputa: El castillo en el cielo) es la primera película oficial de animación del Studio Ghibli, estrenada en 1986. Fue escrita y dirigida por Hayao Miyazaki, producida por Isao Takahata y musicalizada por Joe Hisaishi. La historia sigue a los jóvenes huérfanos Sheeta y Pazu en su búsqueda de una legendaria isla flotante.</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per7"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Nausicaä del Valle del Viento</h5>
+            <p class="card-text">Nausicaä es la joven princesa del Valle del Viento, una valiente exploradora y una pacifista empática que busca la armonía entre la humanidad y la naturaleza. Creada por Hayao Miyazaki en su famoso manga de 1982 y adaptada al cine en la película de 1984, es un icono providencial de la ciencia ficción ecológica.</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per8"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Kiki, la aprendiz de bruja </h5>
+            <p class="card-text">El póster original japonés de Kiki, la aprendiz de bruja (Majo no Takkyūbin), estrenada en 1989 por Studio Ghibli, es una de las piezas más icónicas del anime. Fue diseñado por el propio director, Hayao Miyazaki, y destaca por su estilo pictórico y minimalista. </p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+
+    </div><!--fin fila-->
+
+    <br>
+
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per9"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">Susurros del corazón</h5>
+            <p class="card-text">Una joven estudiante amante de los libros descubre que todos los libros que ha elegido en la biblioteca han sido elegidos anteriormente por la misma persona. Así conoce a Seiji, un joven que está aprendiendo a fabricar violines.</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+      <div class="col1">
+        
+        <div class="card" >
+         <div class="card-img-top per10"> </div>
+
+          <div class="card-body">
+            <h5 class="card-title">El cuento de la princesa Kaguya</h5>
+            <p class="card-text">Encontrada dentro de un brillante tallo de bambú por un viejo cortador de bambú y su esposa, una niña diminuta se convierte rápidamente en una hermosa joven que cautiva a todos los que la conocen, pero debe enfrentar su destino.</p>
+            
+          </div>
+        </div>
+
+      </div><!--fin columna1-->
+
+    
+
+
+    </div><!--fin fila-->
+
+    <br>
+    <div class="row">
+      <h3 class="titulo" id="fundadores">fundadores</h3>
+    </div>
+    <br>
+
+    <div class="row row-cols-1 row-cols-md-2">
+
+      <div class="col fundadores">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Hayao Miyazaki.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Hayao Miyazaki</h5>
+                <p class="card-text">Hayao Miyazaki (宮崎 駿 Miyazaki Hayao?, Bunkyō, Tokio; 5 de enero de 1941) es un director de cine de animación, animador, ilustrador, empresario, mangaka y productor de anime japonés, de renombre internacional y con una carrera de cinco décadas. Junto con Isao Takahata fundó Studio Ghibli, un estudio de películas y animación. Es comparado por muchos con Walt Disney, Steven Spielberg u Orson Welles.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--Fin Columna-->
+
+
+      <div class="col fundadores">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Isao Takahata.avif" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Isao Takahata</h5>
+                <p class="card-text">Isao Takahata (高畑 勲 Takahata Isao?) (Ise, 29 de octubre de 1935-Tokio, 5 de abril de 2018) fue un director, productor y guionista de películas y series de animación japonesa. Fundó, junto con su amigo Hayao Miyazaki, los estudios Ghibli. Sus obras más reconocidas fueron las series para televisión Heidi, la niña de los Alpes (1974) y Marco (1976), y los largometrajes La tumba de las luciérnagas (1988), Recuerdos del ayer (1991) y El cuento de la princesa Kaguya (2013), a la postre su última película, que fue nominada a un Óscar en la categoría de mejor película de animación en los 87.º</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--Fin Columna-->
+
+
+
+      <div class="col fundadores">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Toshio Suzuki.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Toshio Suzuki</h5>
+                <p class="card-text">Toshio Suzuki (鈴木敏夫 Suzuki Toshio?, 19 de agosto de 1948) es un productor de películas de anime y colega de Hayao Miyazaki, así como expresidente de Studio Ghibli. Es reconocido como uno de los productores más exitosos de Japón tras el enorme éxito de taquilla de las películas de Studio Ghibli.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--Fin Columna-->
+
+
+
+      <div class="col fundadores">
+
+        <div class="card mb-3">
+          <div class="row g-0">
+            <div class="col-md-4">
+              <img src="img/Yasuyoshi Tokuma.jpg" class="img-fluid rounded-start" alt="...">
+            </div>
+            <div class="col-md-8">
+              <div class="card-body">
+                <h5 class="card-title">Yasuyoshi Tokuma</h5>
+                <p class="card-text">Yasuyoshi Tokuma (徳間康快) (1921–2000) fue un pacifista, editor y productor japonés, nacido en la prefectura de Kanagawa. Es famoso por fundar la editorial Tokuma Shoten en 1954 y por ser uno de los cofundadores clave del Studio Ghibli. Él dio el apoyo financiero y la libertad creativa necesarios para crear obras maestras de la animación.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div> <!--Fin Columna-->
+
+
+
+    </div><!--Fin fila 1-->
+
+    <br>
+    <div class="row">
+      <h3 class="titulo">Datos Curiosos</h3>
+    </div>
+    <br>     
+
+    <div class="row">
+      <div class="col-md-12">
+
+
+        <table class="table table-hover" style="--bs-table-bg: ;--bs-table-color:black;opacity: 100%;">
+          <thead>
+            <tr>
+              <th scope="col">#</th>
+              <th scope="col">Dato</th>
+              <th scope="col">Descripción</th>
+              
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">1</th>
+              <td>Primera película</td>
+              <td>Nausicaä del Valle del Viento (1984) fue el proyecto que dio origen al estudio.
+                 Aunque se estrenó antes de su fundación oficial, su éxito permitió que Hayao Miyazaki y su equipo crearan Studio Ghibli.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">2</th>
+              <td>Premio Oscar</td>
+              <td>El viaje de Chihiro (2001) ganó el Premio Oscar a Mejor Película Animada en 2003, 
+                convirtiéndose en una de las películas más reconocidas de la historia del anime a nivel mundial.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">3</th>
+              <td>Estilo de animación</td>
+              <td>A diferencia de muchos estudios modernos, Ghibli mantiene una fuerte tradición de 
+                animación dibujada a mano, cuidando cada detalle para lograr escenas visualmente únicas y llenas de vida.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">4</th>
+              <td>Personaje icónico</td>
+              <td>Totoro, de Mi vecino Totoro, es la mascota oficial del estudio y uno de los personajes más reconocibles de la animación japonesa. 
+                Representa la magia, la naturaleza y la infancia.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">5</th>
+              <td>Temáticas profundas</td>
+              <td>Las películas del estudio exploran temas complejos como el respeto por la naturaleza, el impacto de la guerra, el crecimiento personal y la importancia de la imaginación.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">6</th>
+              <td>Detalles realistas</td>
+              <td>En muchas películas, se pone especial atención a pequeños detalles cotidianos (comer, caminar, cocinar), lo que hace que las historias se sientan más reales y cercanas al espectador.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">7</th>
+              <td>Música inolvidable</td>
+              <td>Muchas bandas sonoras de Ghibli han sido compuestas por Joe Hisaishi, cuyas melodías han sido clave para transmitir emociones profundas en las películas.</td>
+              
+            </tr>
+            <tr>
+              <th scope="row">8</th>
+              <td>Impacto mundial</td>
+              <td>Studio Ghibli ha influenciado a animadores, directores y artistas de todo el mundo, convirtiéndose en un referente de calidad, creatividad y narrativa dentro del cine.</td>
+              
+            </tr>
+          </tbody>
+        </table>
+
+
+      </div>
+
+    </div><!--Fin Tabla-->
+
+
+    <br>
+    <div class="row">
+      <h3 class="titulo">Extras</h3>
+    </div>
+    <br>
+
+
+    <div class="row">
+      <div class="col-md-5 texto1">
+        <div class="col-md-12 anima"></div>
+        Nuevos Proyectos y Producciones <br>
+         1:Noche en el Valle de las Brujas (Majo no Tani no Yoru): Un cortometraje dirigido por Goro Miyazaki y Akihiko Yamashita que se estrenó el 8 de julio de 2026. <br> <br>2: Exclusividad en parque temático: Este nuevo corto se proyecta únicamente en el Cinema Orion, ubicado en el almacén del Ghibli Park en Japón, con un acceso muy limitado por sesión. <br><br> 3: Hayao Miyazaki: La directiva del estudio confirmó que el legendario director sigue ideando y trabajando en conceptos para nuevos filmes a pesar de su avanzada edad y tras el éxito de El niño y la garza.
+      </div>
+      <iframe class="col-md-4" src="https://www.youtube.com/embed/rDQRqEQy6fs?si=VEstRUqffE6NlKoW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+      <div class="col-md-3 texto2">
+        El Futuro del Estudio <br>
+       1: Problemas de sucesión: El estudio enfrenta el reto de hallar reemplazos generacionales que igualen la dirección artística de figuras históricas como Hayao Miyazaki e Isao Takahata. <br><br> 2:Transición y legado: Expertos y seguidores apuntan a que Studio Ghibli podría orientarse parcialmente hacia la administración de sus propiedades intelectuales, exposiciones especiales como "Zen y Ghibli" en Kioto, y proyectos de conservación de su enorme legado clásico en lugar de mantener un ritmo constante de largometrajes comerciales.
+          <img src="img/c4.jfif" class="col-md-12 col-12">
+      </div>
+     </div> <!--Fin Fila-->
+
+     <div class="row footer">
+
+        <div class="col-md-3 col-12 text-cente text-md-start">
+            <a href="https://crafteroch.github.io/SNK-Page/" target="_blank">Sitios de interes</a>
+            <a href="https://ghibli.fandom.com/wiki/Studio_Ghibli" target="_blank">Similares</a>
+        </div>
+
+        <div class="col-md-6 col-12 text-cente">
+            @Desarrollado por Ariel Chirino <br>
+
+        </div>
+
+        <div class="col-md-3 col-12 text-cente text-md-end">
+        <i href="https://open.spotify.com/playlist/6ABOS16Y6EJxn7NFxWzric?si=e3iD4fHiSEC8YliU5DW_qQ" target="_blank" class="bi bi-disc-fill">Songs</i>
+        <br>
+        <i href="https://www.youtube.com/watch?v=ubLN1pjCeyI" target="_blank" class="bi bi-youtube">YouTube</i>
+        <br>
+        <i href="https://x.com/GhibliUSA" target="_blank" class="bi bi-twitter">twitter</i>
+        </div>
+     
+      </div>
+
+    </div><!--fin contenedor-->
+      <div style="position: relative;">
+        <a href="#">
+          <img src="img/arrow.png" width="30" height="50" style="position: fixed; bottom: 0px; right: 0px;">
+        </a>
+      </div>
+
+</body>
+</html>
